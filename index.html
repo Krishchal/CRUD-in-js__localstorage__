@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>CRUD_operations</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div id="top-bar">Employee Management</div>
+    <fieldset>
+      <legend>
+        <h2>Employee Details</h2>
+        </legend>
+      <div>
+        <form id="form">
+          <input type="text" placeholder="Full Name" id="name" name="name" />
+          <br />
+          <input type="text" placeholder="Job" id="job" name="job" /> <br />
+          <input type="text" placeholder="Experience" id="exp" name="exp" />
+          <br /><br />
+          <input type="button" value="Add" id="btn" onclick="Submit()" />
+          <br />
+          <input type="reset" value="Reset" id="reset-btn" />
+        </form>
+      </div>
+    </fieldset>
+
+    <br><div id="msg"></div>
+
+    <!-- table for showing added data -->
+    <fieldset>
+      <legend>
+      <h2>Data in Local Storage</h2>
+      </legend>
+
+      <table border="3" id="t">
+        <tr>
+          <th class="table-head">Name</th>
+          <th class="table-head">Job</th>
+          <th class="table-head">Experience</th>
+          <th class="table-head">Action</th>
+        </tr>
+
+       
+      </table>
+    </fieldset>
+
+    <!-- js -->
+    <script src="script.js">
+     
+    </script>
+  </body>
+</html>
